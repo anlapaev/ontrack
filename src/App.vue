@@ -1,20 +1,24 @@
 <template>
-  <header class="sticky top-0 z-20 flex items-center justify-between border-b bg-white p-4">
+  <header class="sticky top-0 z-20 flex items-center justify-between border-b bg-white p-3">
     <a href="#">
       <img src="./assets/img/logo.png" alt="Logo" class="h-9" />
     </a>
-    <a href="#">
-      <div>Day complete!</div>
+    <a href="#" class="text-sm font-medium">
+      <div v-if="true" class="flex items-center gap-2">
+        Day complete!
+        <CheckCircleIcon class="h-7 text-green-500" />
+      </div>
+      <div v-else class="flex items-center gap-2">
+        Progress: <span class="font-mono">20%</span>
+        <div class="h-3 w-3 rounded-full bg-red-500"></div>
+      </div>
     </a>
   </header>
   <main>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero animi ducimus voluptas atque qui
-    saepe laudantium vero, voluptatibus reiciendis, ex repudiandae soluta ratione maiores quos
-    quaerat dignissimos illum odio doloremque optio incidunt. Quo inventore nemo quaerat molestias
-    voluptatem voluptatum doloremque quis totam eaque sequi exercitationem quasi vero illo velit
-    culpa aperiam, odit qui facilis ut maxime officiis? Atque officiis aut rerum dignissimos sunt,
-    perferendis possimus nobis quod quae debitis, quas provident aperiam est perspiciatis commodi
-    hic consectetur praesentium! Ullam vel, non mollitia ratione eaque minima voluptas! Neque,
-    obcaecati commodi. Id amet saepe optio nam hic architecto nobis sapiente cum. Quas.
+    
   </main>
 </template>
+
+<script setup>
+import { CheckCircleIcon } from '@heroicons/vue/24/solid'
+</script>
