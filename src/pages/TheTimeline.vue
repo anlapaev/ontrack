@@ -1,7 +1,12 @@
 <script setup>
 import TimelineItem from '@/components/TimelineItem.vue'
 
-defineProps(['timelineItems'])
+defineProps({
+    timelineItems: {
+        type: Array,
+        required: true
+    }
+})
 </script>
 
 <template>
@@ -10,7 +15,7 @@ defineProps(['timelineItems'])
             <TimelineItem
                 v-for="timelineItem in timelineItems"
                 :key="timelineItem.hour"
-                :timeline-Item="timelineItem"
+                :timeline-item="timelineItem"
             />
         </ul>
     </div>
