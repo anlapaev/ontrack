@@ -12,4 +12,4 @@ const emit = defineEmits(['goToTimeline', 'goToProgress'])
     </header>
 </template>
 
-<style lang="scss" scoped></style>
+
